@@ -25,3 +25,6 @@ Implemented the following programming fundamentals in JS
 
 // How to create JavaScript
 // You just need to create a text editor and run on any of the browser available.
+
+
+alert("New JS file!!!! ")
