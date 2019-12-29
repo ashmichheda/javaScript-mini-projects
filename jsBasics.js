@@ -53,4 +53,21 @@ var MyFavoriteNumber;
 var my_favorite_number;
 
 
-//alert(Test)
+// Arrays
+
+var colors = ['red', 'blue', 'green'];
+// OR
+var colorsNew = new Array("red", "yellow", "orange"); // double or single quotes
+// add new element to Array
+colorsNew.push('purple');
+console.log("String array: "+colorsNew[3]);
+
+// to create an integer Array
+var color = [1, 2, 4];
+console.log("Integer array: "+color[2]);
+
+var mixedArray = [1, 2, "Seven", 55];
+console.log("Mixed datatype array: "+mixedArray[2]);
+console.log("Reversing array: "+mixedArray.reverse());
+console.log("Sorting array: "+mixedArray.sort());
+console.log("Reversing array: "+mixedArray.reverse());
