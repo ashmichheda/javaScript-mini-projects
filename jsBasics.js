@@ -27,4 +27,30 @@ Implemented the following programming fundamentals in JS
 // You just need to create a text editor and run on any of the browser available.
 
 
-alert("New JS file!!!! ")
+//alert("New JS file!!!! ")
+// Variables
+
+/*
+
+Variables naming conventions
+- Variable names can contain letters, numbers, underscores, dollar signs
+- It should begin with a letter
+- Its case sensitive
+
+*/
+
+
+var test = "This is a test";
+var Test = "This is TEST";
+
+// camel case style
+var myFavoriteNumber;
+
+// partial case
+var MyFavoriteNumber;
+
+// underscore
+var my_favorite_number;
+
+
+//alert(Test)
