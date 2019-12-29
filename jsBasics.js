@@ -89,5 +89,37 @@ numbers.forEach(function(number){
 });
 
 for(var i = 0; i<numbers.length; i++){
-  console.log(numbers[i]);
+  //console.log(numbers[i]);
+}
+
+// Conditionals
+
+// == checks values
+if(1 == 1){
+  //console.log("Inside true!!!");
+}
+
+// === checks datatypes
+if(1 === 'ashmi'){
+  //console.log("Check passed!");
+}
+else{
+  //console.log("checked failed! ")
+}
+// switch
+var fruit = "orange";
+
+switch(fruit){
+  case "banana":
+    console.log("I hate bananas");
+    break;
+  case "apple":
+    console.log("I love apples");
+    break;
+  case "orange":
+    console.log("Oranges are ok");
+    break;
+  default:
+    console.log("Inside default");
+    break;
 }
