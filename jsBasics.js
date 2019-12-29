@@ -71,3 +71,23 @@ console.log("Mixed datatype array: "+mixedArray[2]);
 console.log("Reversing array: "+mixedArray.reverse());
 console.log("Sorting array: "+mixedArray.sort());
 console.log("Reversing array: "+mixedArray.reverse());
+
+
+// Loops
+for(var i = 1; i<=9; i++){
+  //console.log("value of i: "+i);
+}
+var j = 0;
+while(j < 9){
+  //console.log("value of j: "+j);
+  j++;
+}
+
+var numbers = [33, 45, 1, 30, 100];
+numbers.forEach(function(number){
+  //console.log(number);
+});
+
+for(var i = 0; i<numbers.length; i++){
+  console.log(numbers[i]);
+}
