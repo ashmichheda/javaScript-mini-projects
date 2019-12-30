@@ -123,3 +123,25 @@ switch(fruit){
     console.log("Inside default");
     break;
 }
+
+// Object Literal
+
+// Declaring an object called person
+var person = {
+  firstName: "Ashmi",
+  lastName: "Chheda",
+  age: 25,
+  sports: ["Tennis", "Badminton", "Swimming"],
+  address: {
+    street: '1011 E Lemon Street',
+    city: 'Tempe',
+    state: 'AZ'
+  },
+  fullName: function(){
+    return this.firstName + " "+ this.lastName;
+  }
+}
+
+
+//console.log("Ashmi's address: "+person.address.city);
+console.log('fullName: '+person.fullName());
