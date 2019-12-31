@@ -154,9 +154,9 @@ apple.describe = function(){
   return 'An apple is of the color: '+this.color+' and of the shape: '+this.shape;
 }
 
-// console.log("Calling object constructor -");
-// console.log('Color: '+apple.color);
-// console.log('Description: '+apple.describe());
+console.log("Calling object constructor -");
+console.log('Color: '+apple.color);
+console.log('Description: '+apple.describe());
 
 // Using the above method is cumbersome, because while creating multiple
 // fruits, we need to write that piece of code again
@@ -179,6 +179,24 @@ var melon = new Fruit('melon', 'green', 'round');
 
 console.log('Apple color: '+apple.color);
 console.log('Melon color: '+melon.color);
-
-
 console.log(melon.describe());
+
+
+// Array of Objects
+var users = [
+  {
+      name : 'Ashmi Chheda',
+      age : 25
+  },
+  {
+      name : 'Piyali Rathore',
+      age: 30
+  },
+  {
+      name: 'Ronit Malhotra',
+      age: 45
+  }
+];
+
+console.log(users[0]); // Gives entire object at 0th position
+console.log(users[0].name); // To access a property of that object
