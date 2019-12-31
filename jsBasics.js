@@ -200,3 +200,11 @@ var users = [
 
 console.log(users[0]); // Gives entire object at 0th position
 console.log(users[0].name); // To access a property of that object
+
+
+// Events
+
+function showDate(){
+  var time = document.getElementById('time');
+  time.innerHTML = Date();
+}
