@@ -144,4 +144,41 @@ var person = {
 
 
 //console.log("Ashmi's address: "+person.address.city);
-console.log('fullName: '+person.fullName());
+//console.log('fullName: '+person.fullName());
+
+// Object constructor
+var apple = new Object();
+apple.color = 'red';
+apple.shape = 'round';
+apple.describe = function(){
+  return 'An apple is of the color: '+this.color+' and of the shape: '+this.shape;
+}
+
+// console.log("Calling object constructor -");
+// console.log('Color: '+apple.color);
+// console.log('Description: '+apple.describe());
+
+// Using the above method is cumbersome, because while creating multiple
+// fruits, we need to write that piece of code again
+// Hence, we can use something like constructor pattern
+
+
+// Constructor Pattern
+
+function Fruit(name, color, shape){
+  this.name = name;
+  this.color = color;
+  this.shape = shape;
+  this.describe = function(){
+    return 'A '+this.name+' is the color '+this.color+' and is the shape '+this.shape;
+  }
+}
+
+var apple = new Fruit('Apple', 'red', 'round');
+var melon = new Fruit('melon', 'green', 'round');
+
+console.log('Apple color: '+apple.color);
+console.log('Melon color: '+melon.color);
+
+
+console.log(melon.describe());
