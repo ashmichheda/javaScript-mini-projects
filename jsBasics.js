@@ -208,3 +208,34 @@ function showDate(){
   var time = document.getElementById('time');
   time.innerHTML = Date();
 }
+
+
+// Forms
+/*
+JavaScript plays a key role in form validations.
+We will see how to use forms
+*/
+  function changeBackground(color){
+    var body = document.getElementById('body');
+    body.style.backgroundColor = color.value;
+
+    // changing heading color
+    var heading = document.getElementById('heading');
+    heading.style.color = color.value;
+  }
+
+
+
+function validateForm(){
+  console.log("Inside validateForm!!");
+  var firstName = document.forms["myForm"]["firstName"].value;
+  console.log("firstName: "+firstName);
+   if(firstName == null || firstName == ""){
+     alert("First Name is required");
+     return false;
+  }
+  if(firstName.length < 3){
+    alert("First name must be atleast 3 chars!");
+    return false;
+  }
+}
