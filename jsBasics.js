@@ -75,36 +75,36 @@ console.log("Reversing array: "+mixedArray.reverse());
 
 // Loops
 for(var i = 1; i<=9; i++){
-  //console.log("value of i: "+i);
+  console.log("value of i: "+i);
 }
 var j = 0;
 while(j < 9){
-  //console.log("value of j: "+j);
+  console.log("value of j: "+j);
   j++;
 }
 
 var numbers = [33, 45, 1, 30, 100];
 numbers.forEach(function(number){
-  //console.log(number);
+  console.log(number);
 });
 
 for(var i = 0; i<numbers.length; i++){
-  //console.log(numbers[i]);
+  console.log(numbers[i]);
 }
 
 // Conditionals
 
 // == checks values
 if(1 == 1){
-  //console.log("Inside true!!!");
+  console.log("Inside true!!!");
 }
 
 // === checks datatypes
 if(1 === 'ashmi'){
-  //console.log("Check passed!");
+  console.log("Check passed!");
 }
 else{
-  //console.log("checked failed! ")
+  console.log("checked failed! ")
 }
 // switch
 var fruit = "orange";
@@ -124,7 +124,7 @@ switch(fruit){
     break;
 }
 
-// Object Literal
+// Object Literals
 
 // Declaring an object called person
 var person = {
@@ -143,8 +143,8 @@ var person = {
 }
 
 
-//console.log("Ashmi's address: "+person.address.city);
-//console.log('fullName: '+person.fullName());
+console.log("Ashmi's address: "+person.address.city);
+console.log('fullName: '+person.fullName());
 
 // Object constructor
 var apple = new Object();
