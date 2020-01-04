@@ -194,13 +194,13 @@ var users = [
   },
   {
       name: 'Ronit Malhotra',
-      age: 45
+      age: 55
   }
 ];
 
 console.log(users[0]); // Gives entire object at 0th position
 console.log(users[0].name); // To access a property of that object
-
+console.log(users[1].age);
 
 // Events
 
