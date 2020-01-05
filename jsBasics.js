@@ -1,5 +1,6 @@
 // What is javascript?
 
+// Notes
 /*
 - A programming language that is used to make web pages interactive
 - It's an interpreted language
