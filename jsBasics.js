@@ -70,6 +70,7 @@ console.log("Integer array: "+color[2]);
 var mixedArray = [1, 2, "Seven", 55];
 console.log("Mixed datatype array: "+mixedArray[2]);
 console.log("Mixed datatype array: "+mixedArray[3]);
+console.log("Mixed datatype array: "+mixedArray[0]);
 console.log("Reversing array: "+mixedArray.reverse());
 console.log("Sorting array: "+mixedArray.sort());
 console.log("Reversing array: "+mixedArray.reverse());
