@@ -1,0 +1,22 @@
+body{
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorButton{
+  padding: 0.25rem 0.25rem;
+  border: 3px solid #fefefe;
+  border-radius: 7px;
+  color: #fefefe;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  text-transform: capitalze;
+  cursor: pointer;
+  outline: none;
+}
+
+.colorButton:hover{
+  background: rgb(0, 0, 0);
+}
