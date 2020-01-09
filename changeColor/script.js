@@ -6,9 +6,7 @@ const bodyBcg = document.querySelector('body');
 const colors = ['yellow', 'red', 'blue', 'green', '#5b6698'];
 
 // Use event listner to change color on select button
-if(colorBtn){
-    colorBtn.addEventListener('click', changeColor);
-}
+colorBtn.addEventListener('click', changeColor);
 
 
 function changeColor(){
