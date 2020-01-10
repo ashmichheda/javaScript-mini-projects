@@ -1,17 +1,20 @@
-// Selecting button
-const colorBtn = document.querySelector('.colorButton');
+const hexNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+const hexBtn = document.querySelector('.hexBtn');
 const bodyBcg = document.querySelector('body');
 
-// Declare an array of colors
-const colors = ['yellow', 'red', 'blue', 'green', '#5b6698'];
+// select this class to change color
+const hex = document.querySelector('.hex');
 
-// Use event listner to change color on select button
-colorBtn.addEventListener('click', changeColor);
+hexBtn.addEventListener('click', getHex);
 
-
-function changeColor(){
-
-  let random = Math.floor(Math.random()*colors.length);
-//  console.log("random: "+random);
-  bodyBcg.style.backgroundColor = colors[random];
+function getHex(){
+  let hexCol = '#';
+  for(let i = 0; i<6; i++){
+    let random = Math.floor(Math.random()*hexNumbers.length);
+    //console.log("random nos: "+random);
+    hexCol += hexNumbers[random];
+    //console.log("Colors formed: "+hexCol);
+  }
+  bodyBcg.style.backgroundColor = hexCol;
+  hex.innerHTML = hexCol;
 }
