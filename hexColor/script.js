@@ -7,6 +7,7 @@ const hex = document.querySelector('.hex');
 
 hexBtn.addEventListener('click', getHex);
 
+
 function getHex(){
   let hexCol = '#';
   for(let i = 0; i<6; i++){
