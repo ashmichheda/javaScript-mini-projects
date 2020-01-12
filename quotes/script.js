@@ -29,7 +29,7 @@ quoteBtn.addEventListener('click', displayQuote);
 
 function displayQuote(){
   let random = Math.floor(Math.random()*quotes.length);
-  console.log('random number: '+random);
+  //console.log('random number: '+random);
   quoteAuthor.innerHTML = quotes[random].name;
   quote.innerHTML = quotes[random].quote;
 }
