@@ -13,7 +13,7 @@ const quotes = [
 },
 {
   name: 'Leonardo Da Vinci',
-  quote: 'It had long come to my attention that people of accomplishment rarely sat back and things happen to them they went out and happened to things.'
+  quote: 'It had long come to my attention that people of accomplishment rarely sat back and things happen to them they went out and happened to things.!'
 },
 {
   name: 'Leo Tolstoy',
