@@ -7,13 +7,6 @@ body{
   color: #333;
   font-family: 'calibri', 'sans-serif';
   font-weight: 400;
-}
-
-.msgHeading{
-  text-transform: capitalize;
-}
-
-.lastMsg{
   text-transform: capitalize;
 }
 
@@ -33,6 +26,7 @@ button{
   background: #6cc3d5;
   border-radius: 7px;
   border: none;
+  text-transform: capitalize;
 }
 
 button:hover{
