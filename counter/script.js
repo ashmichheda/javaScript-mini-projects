@@ -1,21 +1,32 @@
-const hexNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-const hexBtn = document.querySelector('.hexBtn');
-const bodyBcg = document.querySelector('body');
+let counter = document.querySelector('.counter');
+const lowerCount = document.querySelector('#lowerCountBtn');
+const addCount = document.querySelector('#addCountBtn');
 
-// select this class to change color
-const hex = document.querySelector('.hex');
+let count = 0;
 
-hexBtn.addEventListener('click', getHex);
+addCount.addEventListener('click', incrementCounter);
+lowerCount.addEventListener('click', decrementCounter);
 
-
-function getHex(){
-  let hexCol = '#';
-  for(let i = 0; i<6; i++){
-    let random = Math.floor(Math.random()*hexNumbers.length);
-    //console.log("random nos: "+random);
-    hexCol += hexNumbers[random];
-    //console.log("Colors formed: "+hexCol);
+function incrementCounter(){
+  count++;
+  counter.innerHTML = count;
+  if(counter.innerHTML > '0'){
+    counter.style.color = 'yellow';
   }
-  bodyBcg.style.backgroundColor = hexCol;
-  hex.innerHTML = hexCol;
+  else if(counter.innerHTML == '0'){
+    counter.style.color = 'white';
+  }
+  counter.animate([{opacity:'0.2'},{opacity:'1.0'}],{duration:1000, fill: 'forwards'});
+}
+
+function decrementCounter(){
+  count--;
+  counter.innerHTML = count;
+  if(counter.innerHTML < '0'){
+    counter.style.color = 'red';
+  }
+  else if(counter.innerHTML == '0'){
+    counter.style.color = 'white';
+  }
+  counter.animate([{opacity:'0.2'},{opacity:'1.0'}],{duration:1000, fill: 'forwards'});
 }
