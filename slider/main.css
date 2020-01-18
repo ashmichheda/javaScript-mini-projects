@@ -1,47 +1,60 @@
 body{
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('img/tech.jpg');
+  background: url('img/background.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-  font-family: sans-serif;
-  text-transform: capitalize;
 }
 
 
-.counter-box{
-  flex: 0 0 70%;
-  text-align: center;
-  border: 3px solid grey;
-  padding: 1rem;
-  font-weight: bold;
-  box-shadow: 1px 1px 5px 5px black;
-}
-
-.counter{
-  font-size: 6rem;
+.images{
+  background: yellow;
+  flex: 0 0 80%;
+  min-height: 70vh;
+  background: url('img/bcg-0.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 5px 10px black;
+  position: relative;
 }
 
 .btn{
-  background: #fff;
-  border-radius: 8px;
-  font-size: 2rem;
+  display: inline-block;
+  background: white;
+  color: black;
+  border: 3px solid green;
+  font-size: 1.7rem;
   padding: 0.5rem;
-  margin: 0.5rem 0.25rem;
-  border: 3px solid #f15025;
+  border-radius: 20%;
+  box-shadow: 2px 5px black;
   outline: none;
-  box-shadow: 3px 8px #001225;
 }
 
-.btn:hover{
-  background-color: #4caf50;
-  color: white;
+.prevBtn{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
 }
 
 .btn:active{
-  box-shadow: none;
+  background: grey;
+  box-shadow: 1.5px 1.5px grey;
+}
+
+.btn:hover{
+  background: green;
+  color: white;
+}
+
+.nextBtn{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(50%, -50%);
 }
