@@ -8,7 +8,7 @@ nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', previousSlide);
 
 function nextSlide(){
-  //counter.animate([{opacity:'0.1'},{opacity:'1.0'}], {duration:1000, fill:'forwards'});
+
   if(counter == 3){
     counter = -1;
   }
@@ -18,7 +18,7 @@ function nextSlide(){
 }
 
 function previousSlide(){
-//  counter.animate([{opacity:'0.1'},{opacity:'1.0'}], {duration:1000, fill:'forwards'});
+
   if(counter == -1){
     counter = 3;
   }
