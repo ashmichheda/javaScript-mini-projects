@@ -9,19 +9,20 @@ prevBtn.addEventListener('click', previousSlide);
 
 function nextSlide(){
 
-  if(counter == 3){
-    counter = -1;
+  container.animate([{opacity:'0.1'},{opacity:'1.0'}],{duration:1000, fill:'forwards'});
+  if(counter == 4){
+    counter = 0;
   }
-  counter++;
   console.log("Value of counter: "+counter);
   container.style.backgroundImage = `url(img/bcg-${counter}.jpeg`;
+  counter++;
 }
 
 function previousSlide(){
-
-  if(counter == -1){
+  container.animate([{opacity:'0.1'},{opacity:'1.0'}],{duration:1000, fill:'forwards'});
+  if(counter == 0){
     counter = 3;
   }
-  counter--;
   container.style.backgroundImage = `url(img/bcg-${counter}.jpeg`;
+  counter--;
 }
