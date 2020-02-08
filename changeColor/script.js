@@ -12,6 +12,5 @@ colorBtn.addEventListener('click', changeColor);
 function changeColor(){
 
   let random = Math.floor(Math.random()*colors.length);
-//  console.log("random: "+random);
   bodyBcg.style.backgroundColor = colors[random];
 }
