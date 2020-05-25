@@ -67,6 +67,22 @@ function square(number){
 }
 
 let value = square(2);
-console.log("Square of 2 is: "+value)
+console.log("Square of 2 is: "+value);
+
+
+// Maps
+// Maps are a collection of keyed dataitems just like an object. But the main difference is that Map allows
+// keys of any type.
+
+let map = new Map();
+map.set(1, 'Ashmi'); // a numeric key
+map.set('1', 'Raja'); // a String key
+map.set(3, 30);
+map.set(true, 'Algebra'); // a boolean key
+
+console.log("Map size: "+map.size); // 4
+console.log(map.get(1)); // Ashmi
+console.log(map.get('1')); // Raja
+console.log(map.get(true)) // Algebra
 
 
