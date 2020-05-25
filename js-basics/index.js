@@ -143,3 +143,29 @@ map.set('orange', 10);
 
 obj = Object.fromEntries(map.entries());
 console.log("Price of Orange: "+obj.orange);
+
+
+
+// SET - Data Structure
+// A Set is a type of DS - a special type collection - "set of values" (without keys) where
+// each value appears exactly once.
+
+let set = new Set();
+
+let john = {name : 'John'};
+let ashmi = {name : 'Ashmi'};
+let amishi = {name : 'Amishi'};
+
+set.add(john);
+set.add(ashmi);
+set.add(john);
+set.add(amishi);
+set.add(ashmi);
+
+console.log("Set size: "+set.size);
+
+// use loops 
+console.log("Names:")
+for(let val of set){
+    console.log(val.name);
+}
