@@ -103,3 +103,43 @@ for(let num of recipeMap.values()){
 for(let entries of recipeMap){
     console.log("Key and value pairs: "+entries);
 }
+
+// Map has built-in forEach method
+
+// runs the function for each (key, value) pair
+recipeMap.forEach( (value, key, map) => {
+    console.log(`${key} : ${value}`); // onions : 34
+});
+
+// Create a map from a plain Object
+// Object.entries: Map from Object
+let obj = {
+    name: "John",
+    age: 30
+  };
+  
+  let data = new Map(Object.entries(obj));
+  
+  console.log( data.get('name') ); // John
+
+  // Here Object.entries() returns the array of key/value pairs: [['John' : 30], ["Ashmi" : 50]]
+
+// Create an object from Map
+// Object.fromEntries : Object from Map
+let prices = Object.fromEntries([
+    ['onions', 12],
+    ['Beans', 34],
+    ['Peas', 300]
+]);
+
+// here prices is now prices = {onions : 12, Beans : 34, Peas : 300}
+console.log("Price of Onions: "+prices.onions);
+
+// We can use Object.fromEntries to get plain object from Map
+data = new Map();
+map.set('banana', 10);
+map.set('apple', 10);
+map.set('orange', 10);
+
+obj = Object.fromEntries(map.entries());
+console.log("Price of Orange: "+obj.orange);
