@@ -85,4 +85,21 @@ console.log(map.get(1)); // Ashmi
 console.log(map.get('1')); // Raja
 console.log(map.get(true)) // Algebra
 
+// Map iteration
+let recipeMap = new Map([['Potato', 100],
+                        ['tomatoes', 20],
+                        ['onions', 34]]);
+// iterate over keys
+for(let vegetables of recipeMap.keys()){
+    console.log("Keys: "+vegetables);
+}
 
+// iterate over values
+for(let num of recipeMap.values()){
+    console.log("Values: "+num);
+}
+
+// iterate over entries
+for(let entries of recipeMap){
+    console.log("Key and value pairs: "+entries);
+}
